@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JehdDcoding</title>
+    <link rel="icon" href="img/profilepic.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header id="header">
+        <div id="nav-bg"></div>
+        <nav id="nav">
+            <div class="logo">
+                <div class="nickname" id="nickname">Masing</div>
+                <div class="coding" id="coding">Web</div>
+            </div>
+
+            <div class="logo-mobile">
+                <div class="nickname" id="nickname">Masing</div>
+                <div class="coding" id="coding">Web</div>
+            </div>
+            <div class="menu">
+                <ul id="menu">
+                    <li>
+                        <a href="#header" class="home-menu" id="home-menu">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="skills-menu" id="skills-menu">Skills</a>    
+                    </li>
+                    <li>
+                        <a href="#contact" class="contact-menu" id="contact-menu">Contact</a>
+                    </li>
+                </ul>
+                <!-- <button id="nav-icon"><img src="img/nav-icon.svg" alt="nav-icon"></button> -->
+                <div class="navContainer">
+                    <div class="navFlip">
+                        <button class="open" onclick="openIcon()"><img src="img/nav-icon.svg" alt=""></button>
+                        <button class="close" onclick="closeIcon()"><img src="img/close-icon.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-bar">
+            <div class="mobileMenuContainer">
+                <ul class="mobileMenu">
+                    <li><a href="#header" onclick="homeBtn()">Home</a></li>
+                    <li><a href="#skills" onclick="skillsBtn()">Skills</a></li>
+                    <li><a href="#contact" onclick="contactBtn()">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="cover"></div>
+        <div class="hero-section">
+            <div><h4>Do not limit your imagination</h4></div>
+            <div><h1>TRY ME!</h1></div>
+        </div>
+        <div class="hero-image">
+            <img src="img/profilepic.png" alt="hero-image">
+            <img src="img/profilepic-orange.png" alt="hero-image-orange" class="tablet">
+            <img src="img/profile-mobile.png" alt="profile-mobile" class="mobile">
+        </div>
+        <div class="triangle"></div>
+    </header>
+    
+    <div class="exhibit">
+        <div class="exhibit-bg"></div>
+        <div class="left">
+            <div class="thunder"></div>
+        </div>
+        <div class="right">
+            <h1>Front End</h1>
+            <p>It is a pleasure to meet you. If your looking for a customize web application, you can trust me on that. I know how to build it, specially in a front-end web development job.  Want a deal? ask this guy.</p>
+        </div>
+        <div class="triangle"></div>
+    </div>
+
+    <div class="white-bg"></div>
+
+    <div id="skills">
+        <div class="left">
+            <h2>I am prepared and ready with my skill set.</h2>
+            <ul>
+                <li onmouseover="htmlIn()" onmouseout="htmlOut()">HTML</li>
+                <li onmouseover="cssIn()" onmouseout="cssOut()">CSS</li>
+                <li onmouseover="jsIn()" onmouseout="jsOut()">JavaScript</li>
+                <li onmouseover="phpIn()" onmouseout="phpOut()">Php</li>
+                <li onmouseover="mysqlIn()" onmouseout="mysqlOut()">MySQL</li>
+            </ul>
+        </div>
+        <div class="right-bg">
+            <div class="right">
+                <h2 id="moto" class="fader">Set your expectations and let me transpire your ideas</h2>
+                <img src="img/html.png" alt="html" id="html" style="display:none" class="fader">
+                <img src="img/css.png" alt="css" id="css" style="display:none" class="fader">
+                <img src="img/js.png" alt="js" id="js" style="display:none" class="fader">
+                <img src="img/php.png" alt="php" id="php" style="display:none" class="fader">
+                <img src="img/mysql.png" alt="mysql" id="mysql" style="display:none" class="fader">
+            </div>
+        </div>
+    </div>
+
+    <div class="white-bg"></div>
+
+    <div id="contact">
+        
+        <div class="contact-wrap">
+            <div class="help">
+                <h2>Do you need help?</h2>
+                <p>Just share your ideas and tell me your dream web applications.</p>
+                
+
+                <div class="social-media">
+                    <div class="email-add">
+                        <img src="img/icon/email-logo.svg" alt="email-logo">
+                        <p>jehd.jehzher@gmail.com</p>
+                    </div>
+                    <div class="top">
+                        <img src="img/icon/flag-logo.svg" alt="flag-logo">
+                        <p>Philippines</p>
+                        <div class="cp-number">+639207474585</div>
+                    </div>
+                    <div class="bottom">
+                        <a href="https://www.facebook.com/profile.php?id=100004535417624"><img src="img/icon/fb-logo.svg" alt="" class="facebook"></a>
+                        <a href="skype:.cid.2d0a1dd163947714?chat"><img src="img/icon/skype-logo.svg" alt="" class="skype"></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="right">
+                <div class="send" id="sendMe">
+                    <div id="errorMe" style="display:none;color:#FFFF">errorMe</div>
+                    <label for="text" class="tooltip"><span class="tooltiptext" id="tooltiptext1">Empty Name</span>NAME</label>
+                    <input type="text" id="name" required><span class="person-icon"><img src="img/icon/person-logo.svg" alt=""></span>
+                    <label for="email" class="tooltip">EMAIL<span class="tooltiptext" id="tooltiptext2">Empty Email</span><span class="tooltiptext" id="tooltiptext4">Invalid Email</span></label>
+                    <input type="email" id="email" required><span class="email-icon"><img src="img/icon/email-dark-logo.svg" alt=""></span>
+                    <label for="message" class="tooltip">MESSAGE<span class="tooltiptext" id="tooltiptext3">Empty Message</span></label>
+                    <textarea cols="30" rows="10" class="message" id="message" required></textarea><span class="message-icon"></span>
+    
+                    <button class="send-btn" onclick="sendBtn()">
+                        <div class="text">Send</div>
+                        <img src="img/icon/send-logo.svg" alt="">
+                    </button>
+                </div>
+                <div id="sentMe" style="display:none">
+                    <div class="thanks">
+                        <h1>Thank you for reaching out</h1>
+                        <p>Please expect my response in your given email address</p>
+                    </div>
+                    <div class="post-box">
+                        <img src="img/post-box.png" alt="post-box">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-wrap-mobile">
+            <div class="top1">
+                <h2>Do you need help?</h2>
+                <p>Just share your ideas and tell me your dream web applications.</p>
+            </div>
+            <div class="middle">
+                <div class="send" id="sendMeMobile" style="display:block">
+                    <div id="errorMeMobile" style="display:none;color:#FFFF">errorMe</div>
+
+                    <label for="text" class="tooltip"><span class="tooltiptext" id="tooltiptext1-mobile">Empty Name</span>NAME</label>
+                    <input type="text" id="nameMobile" required><span class="person-icon"><img src="img/icon/person-logo.svg" alt=""></span>
+
+                    <label for="email" class="tooltip">EMAIL<span class="tooltiptext" id="tooltiptext2-mobile">Empty Email</span><span class="tooltiptext" id="tooltiptext4-mobile">Invalid Email</span></label>
+                    <input type="email" id="emailMobile" required><span class="email-icon"><img src="img/icon/email-dark-logo.svg" alt=""></span>
+
+                    <label for="message" class="tooltip">MESSAGE<span class="tooltiptext" id="tooltiptext3-mobile">Empty Message</span></label>
+                    <textarea cols="30" rows="10" class="message" id="messageMobile" required></textarea><span class="message-icon"></span>
+        
+                    <button class="send-btn" onclick="sendBtnMbl()">
+                        <div class="text">Send</div>
+                        <img src="img/icon/send-logo.svg" alt="">
+                    </button>
+                </div>
+                <div id="sentMeMobile" style="display:none">
+                    <div class="thanks">
+                        <h1>Thank you for reaching out</h1>
+                        <p>Please expect my response in your given email address</p>
+                    </div>
+                    <div class="post-box">
+                        <img src="img/post-box.png" alt="post-box">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="email-add">
+                    <img src="img/icon/email-logo.svg" alt="email-logo">
+                    <p>jehd.jehzher@gmail.com</p>
+                </div>
+                <div class="cellphone">
+                    <img src="img/icon/flag-logo.svg" alt="flag-logo">
+                    <p>Philippines</p>
+                    <div class="cp-number">+639207474585</div>
+                </div>
+                <div class="fbskype">
+                    <a href="https://www.facebook.com/profile.php?id=100004535417624"><img src="img/icon/fb-logo.svg" alt="" class="facebook"></a>
+                    <a href="skype:.cid.2d0a1dd163947714?chat"><img src="img/icon/skype-logo.svg" alt="" class="skype"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><h6>Copyright <span class="copyright-logo"><img src="img/icon/copyright-logo.svg" alt=""></span> 2023 MasingWeb All Rights Reserved.</h6> </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
